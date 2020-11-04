@@ -42,12 +42,26 @@ public class MyMain {
         list.add(8);
         list.add(10);
 
-        Arraylist<Integer> list2 = new Arraylist<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
         list2.add(9);
         list2.add(10);
         list2.add(-2);
         list2.add(4);
 
-        System.out.println()
+        int[] intlst = {1, 4, 4, 6, 7};
+
+
+
+        System.out.println("there are " +  countOdd(list) + " odd numbers in this list.");
+
+        if (checkDuplicates(list, list2) == true){
+            System.out.println("These two lists have the same number in both lists");
+        }
+        else{
+            System.out.println("These two lists do not have the same number in both lists");
+
+        }
+
+        System.out.println("ArrayList: " + convertToArrayList(intlst));
     }
 }
